@@ -8,22 +8,20 @@ This is a simple website built with HTML and CSS to introduce Bùi Như Quỳnh.
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing and Reporting Issues](#contributing-and-reporting-issues)
 - [Author](#author)
-- [License](#license)
 
 ## Introduction
 
 This website is created to introduce Bùi Như Quỳnh, including personal information, education, work experience, and personal interests.
 
 ## Project Structure
-
+```
 ├── index.html
 ├── styles.css
 ├── images/
 │ └── profile.jpg
 └── README.md
-
+```
 - `index.html`: The main HTML file for the website.
 - `styles.css`: The CSS file containing styles for the website.
 - `images/`: Directory containing images used on the website.
