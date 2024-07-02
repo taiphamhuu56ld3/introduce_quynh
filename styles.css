@@ -43,7 +43,7 @@ body {
 }
 
 .header.sticky {
-    background : var(--bg-color);
+    background: var(--bg-color);
 }
 
 .logo {
@@ -662,7 +662,7 @@ span {
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
-color: var(--text-color);
+    color: var(--text-color);
 }
 
 .contact form .focus {
@@ -680,7 +680,7 @@ color: var(--text-color);
 .contact form .input-box .input-field input:focus~.focus,
 .contact form .input-box .input-field input:valid~.focus,
 .contact form .textarea-field textarea:focus~.focus,
-.contact form .textarea-field textarea:valid~.focus{
+.contact form .textarea-field textarea:valid~.focus {
     width: 100%;
 }
 
@@ -694,8 +694,8 @@ color: var(--text-color);
     resize: none;
 }
 
-.contact form .btn-box.btns .btn{
-cursor: pointer;
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
 }
 
 .footer {
@@ -704,7 +704,7 @@ cursor: pointer;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var( --second-bg-color);
+    background: var(--second-bg-color);
 }
 
 .footer-text p {
@@ -717,9 +717,9 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--main-color) ;
+    background: var(--main-color);
     border: .2rem solid var(--main-color);
-    border-radius : .6rem;
+    border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
 }
@@ -788,3 +788,35 @@ cursor: pointer;
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        background: var(--bg-color);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--bg-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
