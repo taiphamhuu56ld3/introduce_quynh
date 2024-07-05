@@ -170,7 +170,9 @@ section {
 .home.show-animate .home-content .text-animate h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
-};
+}
+
+;
 
 .home-content h3::before {
     content: '';
@@ -839,13 +841,13 @@ span {
 
 .animate.scroll {
     transition: 1s ease;
-    transition-delay: calc( .3s / var(--i));
+    transition-delay: calc(.3s / var(--i));
     animation: none;
 }
 
 section:nth-child(odd) .animate.scroll,
 .footer .animate.scroll {
-background: var(--second-bg-color);
+    background: var(--second-bg-color);
 }
 
 
@@ -861,7 +863,7 @@ background: var(--second-bg-color);
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
-    transition-delay: calc( .3s * var(--i));
+    transition-delay: calc(.3s * var(--i));
     width: 0;
 }
 
@@ -948,6 +950,14 @@ background: var(--second-bg-color);
 
     .footer {
         padding: 2rem 4%;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .animate.home-img {
+        width: 50%;
     }
 }
 
