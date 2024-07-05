@@ -358,14 +358,15 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
+    width: 55%;
     height: 100%;
     background: transparent;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     transition: 3s;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
+    z-index: 0;
 }
 
 .home-imgHover:hover {
