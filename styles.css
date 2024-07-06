@@ -555,6 +555,12 @@ span {
     font-size: 2rem;
 }
 
+.education-content .content h3 img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
