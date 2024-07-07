@@ -14,7 +14,7 @@ let navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop - 100;
+        let offset = sec.offsetTop - 200;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
@@ -45,6 +45,5 @@ window.onscroll = () => {
     // animation on scroll
     let footer = document.querySelector('footer');
 
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= 
-        document.scrollingElement.scrollHeight);
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY + 50 >= document.scrollingElement.scrollHeight);
 }
