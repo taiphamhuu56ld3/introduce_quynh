@@ -101,7 +101,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('images/quynh_pic.png') no-repeat;
+    /* background: url('images/quynh_pic.png') no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -397,6 +397,13 @@ section {
     animation: showRight 1s ease forwards;
     animation-delay: 3s;
     z-index: 100;
+}
+
+.home-img-move img {
+    position: relative;
+    border-radius: 5%;
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
 }
 
 .about {
@@ -941,6 +948,20 @@ section:nth-child(odd) .animate.scroll,
 @keyframes showRight {
     100% {
         width: 0;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    10% {
+        transform: translateY(0);
     }
 }
 
