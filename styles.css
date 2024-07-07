@@ -726,6 +726,7 @@ span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 0;
 }
 
 .contact form .input-box .input-field {
@@ -757,7 +758,7 @@ span {
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .6rem;
     z-index: -1;
     transition: .5s;
@@ -774,6 +775,7 @@ span {
     position: relative;
     margin: .8rem 0 2.7rem;
     display: flex;
+    z-index: 0;
 }
 
 .contact form .textarea-field textarea {
