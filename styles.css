@@ -356,6 +356,16 @@ section {
     width: 100%;
 }
 
+.home.show-animate h4 {
+    position: absolute;
+    color: var(--main-color);
+    font-size: 2rem;
+    bottom: 3rem;
+    right: 2rem;
+    pointer-events: none;
+    opacity: .5;
+}
+
 .home-imgHover {
     position: absolute;
     top: 0;
