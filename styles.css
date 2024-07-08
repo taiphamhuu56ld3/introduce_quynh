@@ -886,6 +886,73 @@ span {
     cursor: pointer;
 }
 
+.contact.contact-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact-sci h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.contact.contact-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: -1;
+}
+
+.contact .contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact .contact-sci a:hover {
+    color: var(--bg-color);
+}
+
+.contact .contact-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact .contact-sci a:hover:before {
+    width: 100%;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -975,7 +1042,7 @@ section:nth-child(odd) .animate.scroll {
     background: var(--second-bg-color);
 }
 
-.footer .animate.scroll{
+.footer .animate.scroll {
     background: var(--bg-color);
 }
 
