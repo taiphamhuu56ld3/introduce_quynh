@@ -886,18 +886,19 @@ span {
     cursor: pointer;
 }
 
-.contact.contact-sci {
-    position: absolute;
-    bottom: 4rem;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
+.contact-sci {
+    position: relative;
+    width: 50rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact .contact-sci h1 {
+.contact-sci h1 {
     position: relative;
     display: inline-block;
     font-size: 2rem;
+    left: 8%;
     font-weight: 700;
     line-height: 2;
 }
