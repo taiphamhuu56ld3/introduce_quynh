@@ -899,7 +899,7 @@ span {
     display: inline-block;
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 2;
 }
 
 .contact.contact-sci::before {
@@ -920,12 +920,12 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 13px;
     color: var(--main-color);
     text-decoration: none;
     z-index: 0;
