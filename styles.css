@@ -486,101 +486,83 @@ span {
 }
 
 .services {
+    background: var(--bg-color);
+}
+
+.services h2 {
+    margin-bottom: 4rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.services-container .services-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.services-box img {
+    position: relative;
+    width: 99%;
+    border-radius: 2rem;
+    left: .5%;
+    transition: .5s ease;
+}
+
+.services-box:hover img {
+    transform: scale(1.1);
+}
+
+.services-box .services-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
-    padding-bottom: 5rem;
-    background: var(--bg-color);
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
 }
 
-.services .education-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
+.services-box:hover .services-layer{
+    transform: translateY(0);
 }
 
-.services .education-row .education-column {
-    flex: 1 1 30rem;
+.services-layer h4{
+    font-size: 3rem;
 }
 
-.services .education-row .education-column .title {
-    position: relative;
-    display: inline-block;
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
-}
-
-.services .education-row .education-column .education-box {
-    position: relative;
-    border-left: .2rem solid var(--main-color);
-}
-
-.services .education-row .education-column .education-box .education-content {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.services .education-row .education-column .education-box .education-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -1.1rem;
-    width: 2rem;
-    height: 2rem;
-    background: var(--main-color);
-    border-radius: 50%;
-}
-
-.services .education-row .education-column .education-box .education-content .content {
-    position: relative;
-    padding: 1.5rem;
-    border: .2rem solid var(--main-color);
-    border-radius: .6rem;
-    margin-bottom: 2rem;
-    overflow: hidden;
-}
-
-.services .education-row .education-column .education-box .education-content .content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--second-bg-color);
-    z-index: -1;
-    transition: .5s;
-}
-
-.services .education-row .education-column .education-box .education-content .content:hover::before {
-    width: 100%;
-}
-
-.services .education-row .education-column .education-box .education-content .content .year {
-    font-size: 1.5rem;
-    color: var(--main-color);
-    padding-bottom: .5rem;
-}
-
-.services .education-row .education-column .education-box .education-content .content .year i {
-    padding-right: .5rem;
-}
-
-.services .education-row .education-column .education-box .education-content .content h3 {
-    font-size: 2rem;
-}
-
-.services .education-row .education-column .education-box .education-content .content h3 img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-}
-
-.services .education-row .education-column .education-box .education-content .content p {
+.services-layer p{
     font-size: 1.6rem;
-    padding-top: .5rem;
+    margin: .3rem 0 1rem;
+}
+
+.services-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.services-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
 }
 
 .education {
@@ -952,83 +934,6 @@ span {
     width: 100%;
 }
 
-.services {
-    background: var(--bg-color);
-}
-
-.services h2 {
-    margin-bottom: 4rem;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.services-container .services-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    display: flex;
-}
-
-.services-box img {
-    width: 100%;
-    transition: .5s ease;
-}
-
-.services-box:hover img {
-    transform: scale(1.1);
-}
-
-.services-box .services-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,.1), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5s ease;
-}
-
-.services-box:hover .services-layer{
-    transform: translateY(0);
-}
-
-.services-layer h4{
-    font-size: 3rem;
-}
-
-.services-layer p{
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
-
-.services-layer a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-.services-layer a i{
-    font-size: 2rem;
-    color: var(--second-bg-color);
-}
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -1130,7 +1035,7 @@ section:nth-child(odd) .animate.scroll {
 .about.show-animate .animate.scroll,
 .services.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
-.services.show-animate .education-box .animate.scroll,
+.services.show-animate .services-container .animate.scroll,
 .education.show-animate .education-box .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
