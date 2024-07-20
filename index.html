@@ -284,58 +284,57 @@
 
     <!-- contact section design -->
     <section class="contact" id="contact">
-
+    
         <div class="contact-sci">
             <h1><a><i class='bx bx-phone'></i></a> Phone number: <span>(+84) 865 485 056</span></h1>
             <br>
-            <h1><a><i class='bx bxl-gmail'></i></a> Gmail: <span>@gmail.com</span></h1>
+            <h1><a><i class='bx bxl-gmail'></i></a> Gmail: <span>buinhuquynh433@gmail.com</span></h1>
             <br>
             <h1><a><i class='bx bx-location-plus'></i>
                 </a> Address: <span>Vo Thanh Trang Street, Ward 11, Binh Tan District, Ho Chi Minh City</span>
             </h1>
             <span class="animate scroll" style="--i:1;"></span>
         </div>
-
+    
         <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
+                    <input type="text" placeholder="Full Name" id="name" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
                 </div>
-
+    
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
+                    <input type="text" placeholder="Email Address" id="email" autocomplete="off">
+                    <div class="error-txt">Email Address can't be blank</div>
                 </div>
-
+    
                 <span class="animate scroll" style="--i:3;"></span>
             </div>
-
+    
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
+                    <input type="text" placeholder="Mobile Number" id="phone" autocomplete="off">
+                    <div class="error-txt">Mobile Number can't be blank</div>
                 </div>
-
+    
                 <div class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
+                    <input type="text" placeholder="Subject" id="subject" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
                 </div>
-
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
-
+    
+    
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
                 <span class="animate scroll" style="--i:7;"></span>
             </div>
-
-
+            <div class="error-txt">Your Message can't be blank</div>
+    
             <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-
+                <button type="submit" class="btn">Send Message</button>
+    
                 <span class="animate scroll" style="--i:9;"></span>
             </div>
         </form>
@@ -355,6 +354,7 @@
         </div>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/script.js"></script>
 </body>
 

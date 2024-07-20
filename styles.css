@@ -934,6 +934,15 @@ span {
     width: 100%;
 }
 
+.error-txt {
+    position: relative;
+    font-size: 13.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
