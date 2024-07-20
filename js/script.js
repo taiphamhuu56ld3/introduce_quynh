@@ -49,7 +49,7 @@ window.onscroll = () => {
 }
 
 // send email
-let form = document.querySelector('form');
+let form = document.querySelector("form");
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
@@ -58,7 +58,7 @@ const message = document.getElementById("message");
 
 function sendEmail() {
 
-    const bodyMessage = `Full Name: ${fullName}<br> Email: ${email.value}
+    const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}
     <br> Phone Number: ${phone.value}<br> Message: ${message.value}`;
 
     Email.send({
