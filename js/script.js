@@ -70,7 +70,15 @@ function sendEmail() {
         Subject : subject.value,
         Body : bodyMessage
     }).then(
-      message => alert(message)
+      message => {
+        if (message == "OK") {
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success"
+            });
+        }
+      }
     );
 }
 
