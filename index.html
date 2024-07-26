@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -484,6 +486,22 @@
             <span class="animate scroll" style="--i:3;"></span>
         </div>
     </footer>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="toggleSound">
+        <source src="audio/close.mp3" type="audio/mpeg">
+        <source src="audio/close.ogg" type="audio/ogg">
+    </audio>
+    
+    <audio id="openSound">
+        <source src="audio/open.mp3" type="audio/mpeg">
+        <source src="audio/open.ogg" type="audio/ogg">
+    </audio>
+    
+    <audio id="hoverSound">
+        <source src="audio/beep.mp3" type="audio/mpeg">
+        <source src="audio/beep.ogg" type="audio/ogg">
+    </audio>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
