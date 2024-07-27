@@ -111,16 +111,16 @@
 }
 
 .field.error .item {
-    border-color: #d93025;
+    border-color: var(--error-color);
 }
 
 .field .item::placeholder {
-    color: rgba(255, 255, 255, .3);
+    color: var(--form-color);
 }
 
 .field .error-txt {
     font-size: 14.5px;
-    color: #d93025;
+    color: var(--error-color);
     text-align: left;
     margin: -5px 0 10px;
     display: none;

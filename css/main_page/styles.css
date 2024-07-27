@@ -16,6 +16,8 @@
     --second-bg-color: #112e42;
     --text-color: #f2faf7;
     --main-color: #03e5c3;
+    --form-color: rgba(255, 255, 255, .3);
+    --error-color: red;
 }
 
 .bright-theme {
@@ -23,6 +25,8 @@
     --second-bg-color: #f7f0f0;
     --text-color: #000106;
     --main-color: #e36a2e;
+    --form-color: rgba(186, 70, 70, 0.3);
+    --error-color: rgb(34, 31, 241);
 }
 
 html {
