@@ -18,6 +18,13 @@
     --main-color: #03e5c3;
 }
 
+.bright-theme {
+    --bg-color: #f2faf7;
+    --second-bg-color: #f7f0f0;
+    --text-color: #000106;
+    --main-color: #e36a2e;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;

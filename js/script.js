@@ -48,6 +48,27 @@ window.onscroll = () => {
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY + 50 >= document.scrollingElement.scrollHeight);
 }
 
+var icon = document.getElementById("icon");
+
+icon.onclick = function () {
+    document.body.classList.toggle("bright-theme");
+
+    // Toggle the icon class based on the presence of the bright-theme class
+    var iconElement = icon.querySelector('i');
+
+    if (document.body.classList.contains("bright-theme")) {
+        // Change to moon icon
+        iconElement.classList.remove('bx-sun');
+        iconElement.classList.add('bx-moon');
+        navbar.classList.remove('active');
+    } else {
+        // Change to sun icon
+        iconElement.classList.remove('bx-moon');
+        iconElement.classList.add('bx-sun');
+        navbar.classList.remove('active');
+    }
+}
+
 // send email
 let form = document.querySelector("form");
 const fullName = document.getElementById("name");

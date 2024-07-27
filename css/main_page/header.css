@@ -36,6 +36,11 @@
     animation-delay: .4s;
 }
 
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
 /* Adaptive screen size */
 @media (max-width: 991px) {
     .header {
