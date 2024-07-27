@@ -10,92 +10,23 @@
     transform: translateX(-50%);
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 0 auto;
+.top-header p {
+    position: relative;
     text-align: center;
+    font-size: 1.6rem;
+    margin: 0 0 3rem;
 }
 
-.contact form .input-box {
-    position: relative;
+.row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    z-index: 0;
-}
-
-.contact form .input-box .input-field {
-    position: relative;
-    width: 49%;
-    margin: .8rem 0;
-}
-
-.contact-sci {
-    position: relative;
-    width: 90rem;
-    height: 15rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-sci h1 {
-    position: relative;
-    display: inline-block;
-    font-size: 2rem;
-    left: 1%;
-    font-weight: 700;
-    line-height: 2;
-}
-
-.contact.contact-sci::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
-    z-index: -1;
+    gap: 50px;
 }
 
-.contact .contact-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    font-size: 13px;
-    color: var(--main-color);
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.contact .contact-sci a:hover {
-    color: var(--bg-color);
-}
-
-.contact .contact-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--main-color);
-    z-index: -1;
-    transition: .5s;
-}
-
-.contact .contact-sci a:hover:before {
-    width: 100%;
+.col {
+    display: flex;
+    width: 50%;
 }
 
 .field .item {
@@ -130,6 +61,26 @@
     display: block;
 }
 
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
 form .textarea-field {
     position: relative;
     z-index: 0;
@@ -141,6 +92,94 @@ form .textarea-field .item {
 
 form .textarea-field .error-txt {
     margin-top: -10px;
+}
+
+.contact-sci {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    height: 395px;
+    top: 4%;
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 1px 8px 10px 2px var(--bg-color);
+    overflow: hidden;
+}
+
+.contact-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 13px;
+    color: var(--form-color);
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.contact-sci:hover a {
+    color: var(--main-color);
+}
+
+.contact-sci:hover span{
+    color: var(--main-color);
+}
+
+.contact-sci:hover h1{
+    color: var(--text-color);
+}
+
+.contact-sci h1 a:hover {
+    color: var(--second-bg-color);
+}
+
+.contact-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact-sci a:hover:before {
+    width: 100%;
+}
+
+.contact-sci>h1 {
+    color: var(--form-color);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    left: 1%;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.contact-sci span {
+    color: var(--form-color);
+}
+
+.contact-sci>p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 5px;
 }
 
 /* For animation */
