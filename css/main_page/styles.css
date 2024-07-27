@@ -158,7 +158,7 @@ span {
     background: var(--second-bg-color);
 }
 
-/* for animation */
+/* For animation */
 .animate {
     position: absolute;
     top: 0;
@@ -169,14 +169,9 @@ span {
     z-index: 98;
 }
 
-.animate.home-img {
-    width: 50%;
-}
-
 .logo .animate,
 .navbar .animate,
-#menu-icon .animate,
-.home.show-animate .animate {
+#menu-icon .animate {
     animation: showRight 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
 }
@@ -189,27 +184,6 @@ span {
 
 section:nth-child(odd) .animate.scroll {
     background: var(--second-bg-color);
-}
-
-.footer .animate.scroll {
-    background: var(--bg-color);
-}
-
-
-.education .education-box .animate.scroll {
-    width: 105%;
-}
-
-.about.show-animate .animate.scroll,
-.services.show-animate .animate.scroll,
-.education.show-animate .animate.scroll,
-.services.show-animate .services-container .animate.scroll,
-.education.show-animate .education-box .animate.scroll,
-.skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll,
-.footer.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
-    width: 0;
 }
 
 /* KEYFRAMES ANIMATION */
@@ -225,136 +199,20 @@ section:nth-child(odd) .animate.scroll {
     }
 }
 
-@keyframes homeBgText {
-
-    0%,
-    10%,
-    100% {
-        background-position: -33rem 0;
-    }
-
-    65%,
-    85% {
-        width: 96%;
-        background-position: 0 0;
-    }
-}
-
-@keyframes homeCursorText {
-
-    0%,
-    10%,
-    100% {
-        width: 0;
-    }
-
-    65%,
-    78%,
-    85% {
-        width: 95%;
-        opacity: 1;
-    }
-
-    75%,
-    85% {
-        opacity: 0;
-    }
-}
-
-@keyframes aboutSpinner {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-2.4rem);
-    }
-
-    10% {
-        transform: translateY(0);
-    }
-}
-
 /* Adaptive screen size */
-@media (max-width: 1300px) {
-    .home .home-img-move img {
-        width: 33%;
-        top: 10%;
-        right: 5%;
-    }
-}
-
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-
-    .home .home-img-move img {
-        width: 30%;
-        top: 15%;
-    }
-}
-
-@media (max-width: 1050px) {
-    .home .home-img-move img {
-        width: 30%;
-        top: 12%;
-    }
 }
 
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 4%;
-    }
-
     section {
         padding: 10rem 4% 2rem;
-    }
-
-    .home {
-        padding: 0 4%;
-    }
-
-    .footer {
-        padding: 2rem 4%;
-    }
-
-    .home .home-img-move img {
-        width: 45%;
-        top: 30%;
-    }
-}
-
-
-@media (max-width: 850px) {
-
-    .animate.home-img {
-        width: 50%;
-    }
-
-    .home .home-img-move img {
-        width: 35%;
-        top: 15%;
     }
 }
 
 @media (max-width: 768px) {
-    .header {
-        background: var(--bg-color);
-    }
-
     #menu-icon {
         display: block;
     }
@@ -408,79 +266,10 @@ section:nth-child(odd) .animate.scroll {
         transform: translateX(0);
         transition-delay: .25s;
     }
-
-    .home-imgHover {
-        pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
-    }
 }
 
 @media (max-width: 520px) {
     html {
         font-size: 50%;
-    }
-
-    .home-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .home-sci {
-        width: 160px;
-    }
-
-    .home-sci a {
-        width: 38px;
-        height: 38px;
-    }
-}
-
-@media (max-width: 462px) {
-    .home-content h1 {
-        font-size: 5.2rem;
-    }
-
-    .education {
-        padding: 10rem 4% 5rem 5%;
-    }
-
-    .services {
-        padding: 10rem 4% 5rem 5%;
-    }
-
-    .contact form .input-box .input-field {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        margin-top: 2rem;
-        text-align: center;
-    }
-
-    .home .home-img-move img {
-        width: 45%;
-        top: 40%;
-    }
-}
-
-@media (max-width: 371px) {
-    .home {
-        justify-content: center;
-    }
-
-    .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
     }
 }

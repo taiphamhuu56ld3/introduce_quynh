@@ -53,3 +53,31 @@
 .footer-iconTop a:hover i {
     color: var(--main-color);
 }
+
+/* For animation */
+.footer .animate.scroll {
+    background: var(--bg-color);
+}
+
+.footer.show-animate .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
+    width: 0;
+}
+
+/* Adaptive screen size */
+@media (max-width: 991px) {
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 462px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

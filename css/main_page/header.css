@@ -35,3 +35,16 @@
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
+
+/* Adaptive screen size */
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: var(--bg-color);
+    }
+}

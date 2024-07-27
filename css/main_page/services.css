@@ -77,3 +77,18 @@
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+/* For animation */
+.services.show-animate .animate.scroll,
+.services.show-animate .services-container .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
+    width: 0;
+}
+
+/* Adaptive screen size */
+@media (max-width: 462px) {
+    .services {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+}

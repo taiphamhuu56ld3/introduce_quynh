@@ -142,3 +142,16 @@ form .textarea-field .item {
 form .textarea-field .error-txt {
     margin-top: -10px;
 }
+
+/* For animation */
+.contact.show-animate .animate.scroll {
+    transition-delay: calc(.3s * var(--i));
+    width: 0;
+}
+
+/* Adaptive screen size */
+@media (max-width: 462px) {
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+}

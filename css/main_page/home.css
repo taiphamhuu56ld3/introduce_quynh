@@ -229,3 +229,164 @@
     right: 15%;
     animation: floatImage 4s ease-in-out infinite;
 }
+
+/* For animation */
+
+.animate.home-img {
+    width: 50%;
+}
+
+.home.show-animate .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes homeBgText {
+
+    0%,
+    10%,
+    100% {
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85% {
+        width: 96%;
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    65%,
+    78%,
+    85% {
+        width: 95%;
+        opacity: 1;
+    }
+
+    75%,
+    85% {
+        opacity: 0;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Adaptive screen size */
+@media (max-width: 1300px) {
+    .home .home-img-move img {
+        width: 33%;
+        top: 10%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .home .home-img-move img {
+        width: 30%;
+        top: 15%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .home .home-img-move img {
+        width: 30%;
+        top: 12%;
+    }
+}
+
+@media (max-width: 991px) {
+    .home {
+        padding: 0 4%;
+    }
+
+    .home .home-img-move img {
+        width: 45%;
+        top: 30%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .animate.home-img {
+        width: 50%;
+    }
+
+    .home .home-img-move img {
+        width: 35%;
+        top: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-imgHover {
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+}
+
+@media (max-width: 520px) {
+    .home-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 160px;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 462px) {
+    .home-content h1 {
+        font-size: 5.2rem;
+    }
+
+    .home .home-img-move img {
+        width: 45%;
+        top: 40%;
+    }
+}
+
+@media (max-width: 371px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+}
