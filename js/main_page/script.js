@@ -112,6 +112,7 @@ const dropdownAccountProjectManager = new DropdownManager("dropdown-account-proj
 const dropdownDataAnalyticsManager = new DropdownManager("dropdown-data-analytics", "menu-data-analytics");
 const dropdownPublicRelationsManager = new DropdownManager("dropdown-public-relations", "menu-public-relations");
 const dropdownCustomerServiceManager = new DropdownManager("dropdown-customer-service", "menu-customer-service");
+const dropdownCustomerSoftSkills = new DropdownManager("dropdown-soft-skills", "menu-soft-skills");
 
 const handleDropdownClicked = (type) => {
     switch (type) {
@@ -132,6 +133,9 @@ const handleDropdownClicked = (type) => {
             break;
         case 'customer-service':
             dropdownCustomerServiceManager.handleDropdownClicked(event);
+            break;
+        case 'soft-skills':
+            dropdownCustomerSoftSkills.handleDropdownClicked(event);
             break;
         default:
             console.warn('Unknown dropdown type');
