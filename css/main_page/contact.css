@@ -189,6 +189,12 @@ form .textarea-field .error-txt {
 }
 
 /* Adaptive screen size */
+@media (max-width: 767px) {
+    .contact h1 {
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 462px) {
     .contact form .input-box .input-field {
         width: 100%;
