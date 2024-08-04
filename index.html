@@ -18,7 +18,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 </head>
 
 <body>
@@ -253,7 +256,208 @@
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
 
+        <!-- Marketing Strategy & Management -->
         <div class="skills-row">
+            <div class="skills-column">
+                <div class="dropdown" id="dropdown-marketing">
+                    <button onclick="handleDropdownClicked('marketing')">
+                        Marketing Strategy & Management
+                        <span class="chevron material-symbols-outlined"> expand_more </span>
+                    </button>
+                    <div class="menu" id="menu-marketing">
+                        <div id="menu-inner-marketing" class="menu-inner">
+                            <div class="main-menu">
+                                <div class="progress">
+                                    <h3>Marketing Management <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Marketing Strategy <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Marketing Plan Development <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Sales Strategies <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Competitive Analysis <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Market Research & Analysis <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <!-- Integrated Marketing Communication (IMC) & Digital Marketing -->
+            <div class="skills-column">
+                <div class="dropdown" id="dropdown-imc">
+                    <button onclick="handleDropdownClicked('imc')">
+                        Integrated Marketing Communication (IMC) & Digital Marketing
+                        <span class="chevron material-symbols-outlined"> expand_more </span>
+                    </button>
+                    <div class="menu" id="menu-imc">
+                        <div id="menu-inner-imc" class="menu-inner">
+                            <div class="main-menu">
+                                <div class="progress">
+                                    <h3>Integrated Marketing Communication (IMC) <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Digital Marketing <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Search Engine Optimization (SEO) <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Social Media <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Content Management System (CMS) <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Graphic Design <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <!-- Account & Project Management -->
+            <div class="skills-column">
+                <div class="dropdown" id="dropdown-account-project">
+                    <button onclick="handleDropdownClicked('account-project')">
+                        Account & Project Management
+                        <span class="chevron material-symbols-outlined"> expand_more </span>
+                    </button>
+                    <div class="menu"  id="menu-account-project">
+                        <div id="menu-inner-account-project" class="menu-inner">
+                            <div class="main-menu">
+                                <div class="progress">
+                                    <h3>Account Management <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Project Management <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Event Resource Planning <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <!-- Data & Analytics -->
+            <div class="skills-column">
+                <div class="dropdown" id="dropdown-data-analytics">
+                    <button onclick="handleDropdownClicked('data-analytics')">
+                        Data & Analytics
+                        <span class="chevron material-symbols-outlined"> expand_more </span>
+                    </button>
+                    <div class="menu" id="menu-data-analytics">
+                        <div id="menu-inner-data-analytics" class="menu-inner">
+                            <div class="main-menu">
+                                <div class="progress">
+                                    <h3>Data Analytics <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Leveraging Third-Party Analysis <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <!-- Public Relations & Media -->
+            <div class="skills-column">
+                <div class="dropdown" id="dropdown-public-relations">
+                    <button onclick="handleDropdownClicked('public-relations')">
+                        Public Relations & Media
+                        <span class="chevron material-symbols-outlined"> expand_more </span>
+                    </button>
+                    <div class="menu" id="menu-public-relations">
+                        <div id="menu-inner-public-relations" class="menu-inner">
+                            <div class="main-menu">
+                                <div class="progress">
+                                    <h3>Media Relations <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Industry Analyst Relations <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
+            <!-- Customer Service & Content -->
+            <div class="skills-column">
+                <div class="dropdown" id="dropdown-customer-service">
+                    <button onclick="handleDropdownClicked('customer-service')">
+                        Customer Service & Content
+                        <span class="chevron material-symbols-outlined"> expand_more </span>
+                    </button>
+                    <div class="menu" id="menu-customer-service">
+                        <div id="menu-inner-customer-service" class="menu-inner">
+                            <div class="main-menu">
+                                <div class="progress">
+                                    <h3>Customer Service-Oriented <span>70%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Content Management System (CMS) <span>60%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3;"></span>
+                </div>
+            </div>
+
             <div class="skills-column">
                 <h3 class="title">Specialized skills<span class="animate scroll" style="--i:2;"></span></h3>
 
@@ -263,108 +467,7 @@
                             <h3>Consumer behavior <span>70%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
-
-                        <div class="progress">
-                            <h3>Marketing management <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Marketing strategy <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Integrated Marketing Communication (IMC) <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Industry analyst relations <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Leveraging third-party analysis <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Account Management <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Project Management <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Digital Marketing <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Media Relations <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Graphic Design <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Competitive Analysis <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Event resource planning <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Content management system (CMS) <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Search engine optimisation (SEO) <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Customer Service-Oriented <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Data Analytics <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Sales Strategies <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Social Media <span>70%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Marketing Plan Development <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Market Research & Analysis <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
                     </div>
-
                     <span class="animate scroll" style="--i:3;"></span>
                 </div>
             </div>
@@ -523,6 +626,8 @@
         <source src="audio/beep.ogg" type="audio/ogg">
     </audio>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main_page/script.js"></script>

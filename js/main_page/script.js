@@ -68,3 +68,72 @@ icon.onclick = function () {
         navbar.classList.remove('active');
     }
 }
+
+class DropdownManager {
+    constructor(dropdownId, menuId) {
+        this.dropdownId = dropdownId;
+        this.menuId = menuId;
+        this.dropdownElement = document.getElementById(dropdownId);
+        this.menuElement = document.getElementById(menuId);
+
+        if (this.dropdownElement) {
+            this.dropdownElement.addEventListener('click', (event) => this.handleDropdownClicked(event));
+        }
+    }
+
+    handleDropdownClicked(event) {
+        event.stopPropagation();
+        const isOpen = this.dropdownElement.classList.contains("open");
+        this.toggleDropdown(!isOpen);
+        this.moveElement();
+    }
+
+    toggleDropdown(isOpen) {
+        if (this.dropdownElement) {
+            this.dropdownElement.classList.toggle("open", isOpen);
+        }
+    }
+
+    moveElement() {
+        if (this.dropdownElement && this.menuElement) {
+            const menuStyle = window.getComputedStyle(this.menuElement);
+            const topOffset = parseFloat(menuStyle.top);
+
+            this.dropdownElement.style.height = this.dropdownElement.classList.contains("open")
+                ? `${this.menuElement.scrollHeight + topOffset}px`
+                : '100%';
+        }
+    }
+}
+
+const dropdownMarketingManager = new DropdownManager("dropdown-marketing", "menu-marketing");
+const dropdownIMCManager = new DropdownManager("dropdown-imc", "menu-imc");
+const dropdownAccountProjectManager = new DropdownManager("dropdown-account-project", "menu-account-project");
+const dropdownDataAnalyticsManager = new DropdownManager("dropdown-data-analytics", "menu-data-analytics");
+const dropdownPublicRelationsManager = new DropdownManager("dropdown-public-relations", "menu-public-relations");
+const dropdownCustomerServiceManager = new DropdownManager("dropdown-customer-service", "menu-customer-service");
+
+const handleDropdownClicked = (type) => {
+    switch (type) {
+        case 'marketing':
+            dropdownMarketingManager.handleDropdownClicked(event);
+            break;
+        case 'imc':
+            dropdownIMCManager.handleDropdownClicked(event);
+            break;
+        case 'account-project':
+            dropdownAccountProjectManager.handleDropdownClicked(event);
+            break;
+        case 'data-analytics':
+            dropdownDataAnalyticsManager.handleDropdownClicked(event);
+            break;
+        case 'public-relations':
+            dropdownPublicRelationsManager.handleDropdownClicked(event);
+            break;
+        case 'customer-service':
+            dropdownCustomerServiceManager.handleDropdownClicked(event);
+            break;
+        default:
+            console.warn('Unknown dropdown type');
+    }
+};

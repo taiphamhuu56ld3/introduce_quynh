@@ -4,6 +4,155 @@
 
 }
 
+/* Dropdown container */
+.dropdown {
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Dropdown button */
+.dropdown > button {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
+    width: 100%;
+    height: 64px;
+    border-radius: 6px;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.dropdown > button:hover {
+    background: #3a3a3a;
+}
+
+.dropdown.open > button {
+    background: #0a82d5;
+}
+
+.dropdown button .chevron {
+    margin-left: auto;
+}
+
+/* Dropdown menu */
+.menu {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    border-radius: 6px;
+    border-top: 0;
+    background: var(--bg-color);
+    translate: 0 -20px;
+    transition: opacity 0.4s, visibility 0.4s, translate 0.4s;
+}
+
+/* Menu inner container */
+.menu-inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    transition: border-color 0.3s, translate 0.3s;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+
+.menu-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+.menu-inner:hover::before {
+    width: 100%;
+}
+
+.menu-inner.open {
+    translate: -50%;
+}
+
+/* Menu button */
+.menu button {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.menu button:hover {
+    background: var(--bg-color);
+}
+
+/* Dropdown menu state */
+.dropdown.open .menu {
+    opacity: 1;
+    translate: 0;
+    visibility: visible;
+}
+
+/* Main menu styling */
+.main-menu {
+    width: 100%;
+}
+
+.main-menu .progress {
+    padding: 1rem 0;
+}
+
+.main-menu .progress h3 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu .progress h3 span {
+    color: var(--text-color);
+}
+
+.main-menu .progress .bar {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.main-menu .progress .bar span {
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+}
+
+/* Specific progress bar widths */
+.menu .menu-inner .main-menu .progress:nth-child(1) .bar span {
+    width: 70%;
+}
+
+.menu .menu-inner .main-menu .progress:nth-child(2) .bar span {
+    width: 60%;
+}
+
 .skills h2 {
     display: inline-block;
     left: 50%;
