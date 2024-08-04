@@ -1,10 +1,11 @@
 // toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+if (menuIcon) {
+    menuIcon.addEventListener('click', e => {
+        menuIcon.classList.toggle('active');
+        navbar.classList.toggle('active');
+    })
 }
 
 // scroll sections
@@ -39,7 +40,7 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     // remove toggle icon and navbar
-    menuIcon.classList.remove('bx-x');
+    menuIcon.classList.remove('active');
     navbar.classList.remove('active');
 
     // animation on scroll

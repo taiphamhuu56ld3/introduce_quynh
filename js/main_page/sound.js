@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     let navA = document.querySelectorAll('nav a');
     let button = $("button");
-    let menuIcon = document.getElementById('menu-icon');
+    let menuIcon = document.querySelector('.menu-icon');
     let downloadCv = $(".btn");
     let socialBtn = $(".social-btn");
 

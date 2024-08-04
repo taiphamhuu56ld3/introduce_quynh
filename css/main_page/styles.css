@@ -56,7 +56,7 @@ body {
     color: var(--main-color);
 }
 
-#menu-icon {
+.menu-icon {
     position: relative;
     font-size: 3.6rem;
     color: var(--text-color);
@@ -276,6 +276,99 @@ section:nth-child(odd) .animate.scroll {
     .navbar.active a {
         transform: translateX(0);
         transition-delay: .25s;
+    }
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menu-icon {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        left: 0;
+        position: absolute;
+        height: 0.4rem;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: var(--text-color);
+        margin: .16rem 0;
+    }
+
+    .menu-icon:before,
+    .menu-icon:after {
+        left: 0;
+        position: absolute;
+        height: 0.4rem;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: var(--text-color);
+    }
+
+    .menu-icon:before,
+    .menu-icon:after {
+        content: '';
+    }
+
+    .menu-icon:before {
+        top: 0;
+    }
+
+    .menu-icon:after {
+        bottom: 0;
+    }
+
+    .menu-icon span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%) translate(0px, -50%);
+    }
+
+    .menu-icon.active span {
+        transform: scale(0);
+    }
+
+    .menu-icon.active:before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .menu-icon.active:after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .menu__body {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--second-bg-color);
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .menu__body.active {
+        left: 0;
+    }
+
+    .menu__body:after {
+        content: '';
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        top: 0;
+        left: 0;
+        background-color: var(--bg-color);
     }
 }
 
