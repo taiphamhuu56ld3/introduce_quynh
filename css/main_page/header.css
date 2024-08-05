@@ -58,4 +58,9 @@
     .header {
         background: var(--bg-color);
     }
+
+    .logo {
+        font-size: 2.0rem;
+    }
+
 }
