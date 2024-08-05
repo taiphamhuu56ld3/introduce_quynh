@@ -180,6 +180,10 @@ span {
     z-index: 98;
 }
 
+.logo .animate {
+    right: 10%;
+}
+
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate {
