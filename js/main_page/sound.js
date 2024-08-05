@@ -33,13 +33,15 @@ $(document).ready(function () {
         link.addEventListener('click', playOpenSound);
     });
 
-    // Attach event listener to buttons for hover sound
-    button.mouseenter(playHoverSound);
+    // Attach event listener to buttons for click sound
+    button.click(playToggleSound);
 
     // Attach event listener to bx-menu for click sound
     menuIcon.addEventListener('click', playToggleSound);
 
     // Attach event listener to downloadCv buttons for hover sound
     downloadCv.mouseenter(playHoverSound);
-    socialBtn.mouseenter(playToggleSound);
+
+    // Attach event listener to socialBtn for click sound
+    socialBtn.click(playToggleSound);
 });
