@@ -277,13 +277,7 @@ section:nth-child(odd) .animate.scroll {
         transform: translateX(0);
         transition-delay: .25s;
     }
-}
 
-.menu-icon {
-    display: none;
-}
-
-@media (max-width: 767px) {
     .menu-icon {
         z-index: 5;
         display: block;
