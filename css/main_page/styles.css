@@ -12,19 +12,19 @@
 }
 
 :root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #f2faf7;
-    --main-color: #03e5c3;
+    --bg-color: #03021d;
+    --second-bg-color: #050334;
+    --text-color: #f2f5fad8;
+    --main-color: #03ace5;
     --form-color: rgba(255, 255, 255, .3);
     --error-color: red;
 }
 
 .bright-theme {
-    --bg-color: #f2faf7;
-    --second-bg-color: #f7f0f0;
-    --text-color: #000106;
-    --main-color: #e36a2e;
+    --bg-color: #f2f7fa;
+    --second-bg-color: #fbd0d0;
+    --text-color: #060000;
+    --main-color: #ef2626;
     --form-color: rgba(186, 70, 70, 0.3);
     --error-color: rgb(34, 31, 241);
 }
