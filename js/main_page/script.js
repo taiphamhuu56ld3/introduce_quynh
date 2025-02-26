@@ -1,3 +1,20 @@
+// auto update span % value based on value entered from html
+document.addEventListener("DOMContentLoaded", function () {
+    function updateProgressBars() {
+        document.querySelectorAll(".progress").forEach(progress => {
+            let percentageSpan = progress.querySelector("h3 span");
+            let barSpan = progress.querySelector(".bar span");
+
+            if (percentageSpan && barSpan) {
+                let percentage = percentageSpan.innerHTML.trim().replace("%", "");
+                barSpan.style.width = percentage + "%";
+            }
+        });
+    }
+
+    updateProgressBars();
+});
+
 // toggle icon navbar
 const menuIcon = document.querySelector('.menu-icon');
 const navbar = document.querySelector('.navbar');
