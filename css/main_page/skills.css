@@ -234,125 +234,215 @@
     background: var(--main-color);
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 70%;
+/* Programming Languages progress bar widths */
+#python span {
+    width: 90%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+#cpp span {
     width: 80%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 60%;
+#sql span {
+    width: 40%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 70%;
+#type_script span {
+    width: 40%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+#html_css span {
+    width: 50%;
+}
+
+#xml span {
+    width: 50%;
+}
+
+#bash_script span {
+    width: 50%;
+}
+
+#batch span {
+    width: 50%;
+}
+
+/* Software Development Principles & Patterns */
+#oop span {
+    width: 100%;
+}
+
+#solid span {
+    width: 90%;
+}
+
+#mvc span {
     width: 80%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+#factory_pattern span {
     width: 60%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+#data_structures_algorithms span {
+    width: 60%;
+}
+
+#tdd span {
+    width: 60%;
+}
+
+/* Development Tools & Environments Progress Bar Widths */
+#vs_code span {
+    width: 90%;
+}
+
+#visual_studio span {
+    width: 60%;
+}
+
+#github span {
+    width: 60%;
+}
+
+#gitlab span {
     width: 70%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {
+#bitbucket span {
     width: 80%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(9) .bar span {
+#sonarqube span {
     width: 60%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(10) .bar span {
+#debian_12 span {
+    width: 60%;
+}
+
+/* DevOps & CI/CD Progress Bar Widths */
+#github_actions span {
+    width: 20%;
+}
+
+#gitlab_cicd span {
+    width: 50%;
+}
+
+#bash_script span {
+    width: 60%;
+}
+
+#batch span {
+    width: 60%;
+}
+
+#sonarqube span {
+    width: 60%;
+}
+
+#tdd span {
+    width: 60%;
+}
+
+#unittest span {
     width: 70%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(11) .bar span {
+#integration_test span {
+    width: 50%;
+}
+
+/* Project Management & Collaboration Progress Bar Widths */
+#jira span {
     width: 80%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(12) .bar span {
+#raci_matrix span {
+    width: 80%;
+}
+
+#gantt_charts span {
+    width: 100%;
+}
+
+#agile span {
     width: 60%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(13) .bar span {
+#scrum span {
+    width: 90%;
+}
+
+#kanban span {
+    width: 80%;
+}
+
+/* Documentation & Diagram Progress Bar Widths */
+#markdown span {
     width: 70%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(14) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(15) .bar span {
+#mkdocs span {
     width: 60%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(16) .bar span {
+#erd span {
+    width: 60%;
+}
+
+#bpmn span {
+    width: 60%;
+}
+
+#use_case_diagram span {
+    width: 90%;
+}
+
+#class_diagram span {
+    width: 90%;
+}
+
+#sequence_diagram span {
+    width: 80%;
+}
+
+#activity_diagram span {
     width: 70%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(17) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(18) .bar span {
-    width: 60%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(19) .bar span {
-    width: 70%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(20) .bar span {
-    width: 80%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(21) .bar span {
-    width: 60%;
-}
-
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+/* Soft Skills Progress Bar Widths */
+#communication span {
     width: 85%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 70%;
+#problem_solving span {
+    width: 80%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+#public_speaking span {
     width: 75%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+#presentation span {
+    width: 90%;
+}
+
+#teamwork span {
+    width: 80%;
+}
+
+#adaptability span {
+    width: 75%;
+}
+
+#time_management span {
     width: 85%;
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
-    width: 70%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span {
-    width: 75%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(7) .bar span {
-    width: 85%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(8) .bar span {
-    width: 70%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(9) .bar span {
-    width: 75%;
+#decision_making span {
+    width: 78%;
 }
 
 /* For animation */

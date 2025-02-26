@@ -311,48 +311,59 @@
         </div>
     </section>
 
+    <!-- skills section design -->
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-        <!-- Marketing Strategy & Management -->
         <div class="skills-row">
+            <!-- Programming Languages -->
             <div class="skills-column">
-                <div class="dropdown" id="dropdown-marketing">
-                    <button onclick="handleDropdownClicked('marketing')">
-                        Marketing Strategy & Management
+                <div class="dropdown" id="dropdown-programming-languages">
+                    <button onclick="handleDropdownClicked('programming_languages')">
+                        Programming Languages
                         <span class="chevron material-symbols-outlined"> expand_more </span>
                     </button>
-                    <div class="menu" id="menu-marketing">
-                        <div id="menu-inner-marketing" class="menu-inner">
+                    <div class="menu" id="menu-programming-languages">
+                        <div id="menu-inner-programming-languages" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Marketing Management <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Python <span>90%</span></h3>
+                                    <div class="bar" id="python"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Marketing Strategy <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>C++ (CPP) <span>80%</span></h3>
+                                    <div class="bar" id="cpp"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Marketing Plan Development <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>SQL <span>40%</span></h3>
+                                    <div class="bar" id="sql"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Sales Strategies <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>TypeScript <span>40%</span></h3>
+                                    <div class="bar" id="type_script"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Competitive Analysis <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>HTML and CSS <span>50%</span></h3>
+                                    <div class="bar" id="html_css"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Market Research & Analysis <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>XML <span>50%</span></h3>
+                                    <div class="bar" id="xml"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Bash Script <span>50%</span></h3>
+                                    <div class="bar" id="bash_script"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Batch <span>50%</span></h3>
+                                    <div class="bar" id="batch"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -361,44 +372,44 @@
                 </div>
             </div>
 
-            <!-- Integrated Marketing Communication (IMC) & Digital Marketing -->
+            <!-- Software Development Principles & Patterns -->
             <div class="skills-column">
-                <div class="dropdown" id="dropdown-imc">
-                    <button onclick="handleDropdownClicked('imc')">
-                        Integrated Marketing Communication (IMC) & Digital Marketing
+                <div class="dropdown" id="dropdown-principles-patterns">
+                    <button onclick="handleDropdownClicked('principles-patterns')">
+                        Software Development Principles & Patterns
                         <span class="chevron material-symbols-outlined"> expand_more </span>
                     </button>
-                    <div class="menu" id="menu-imc">
-                        <div id="menu-inner-imc" class="menu-inner">
+                    <div class="menu" id="menu-principles-patterns">
+                        <div id="menu-inner-principles-patterns" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Integrated Marketing Communication (IMC) <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>OOP Principles <span>100%</span></h3>
+                                    <div class="bar" id="oop"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Digital Marketing <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>SOLID Principles <span>90%</span></h3>
+                                    <div class="bar" id="solid"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Search Engine Optimization (SEO) <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>MVC Pattern <span>80%</span></h3>
+                                    <div class="bar" id="mvc"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Social Media <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Factory Pattern <span>60%</span></h3>
+                                    <div class="bar" id="factory_pattern"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Content Management System (CMS) <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Data Structures & Algorithms <span>60%</span></h3>
+                                    <div class="bar" id="data_structures_algorithms"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Graphic Design <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>TDD (Test-Driven Development) <span>60%</span></h3>
+                                    <div class="bar" id="tdd"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -407,29 +418,49 @@
                 </div>
             </div>
 
-            <!-- Account & Project Management -->
+            <!-- Development Tools & Environments -->
             <div class="skills-column">
-                <div class="dropdown" id="dropdown-account-project">
-                    <button onclick="handleDropdownClicked('account-project')">
-                        Account & Project Management
+                <div class="dropdown" id="dropdown-tools-environments">
+                    <button onclick="handleDropdownClicked('tools-environments')">
+                        Development Tools & Environments
                         <span class="chevron material-symbols-outlined"> expand_more </span>
                     </button>
-                    <div class="menu"  id="menu-account-project">
-                        <div id="menu-inner-account-project" class="menu-inner">
+                    <div class="menu"  id="menu-tools-environments">
+                        <div id="menu-inner-tools-environments" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Account Management <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>VS Code <span>90%</span></h3>
+                                    <div class="bar" id="vs_code"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Project Management <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Visual Studio <span>60%</span></h3>
+                                    <div class="bar" id="visual_studio"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Event Resource Planning <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>GitHub <span>60%</span></h3>
+                                    <div class="bar" id="github"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>GitLab <span>70%</span></h3>
+                                    <div class="bar" id="gitlab"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Bitbucket <span>80%</span></h3>
+                                    <div class="bar" id="bitbucket"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>SonarQube <span>60%</span></h3>
+                                    <div class="bar" id="sonarqube"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Debian 12 <span>60%</span></h3>
+                                    <div class="bar" id="debian_12"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -438,24 +469,54 @@
                 </div>
             </div>
 
-            <!-- Data & Analytics -->
+            <!-- DevOps & CI/CD -->
             <div class="skills-column">
-                <div class="dropdown" id="dropdown-data-analytics">
-                    <button onclick="handleDropdownClicked('data-analytics')">
-                        Data & Analytics
+                <div class="dropdown" id="dropdown-devops-cicd">
+                    <button onclick="handleDropdownClicked('devops-cicd')">
+                        DevOps & CI/CD
                         <span class="chevron material-symbols-outlined"> expand_more </span>
                     </button>
-                    <div class="menu" id="menu-data-analytics">
-                        <div id="menu-inner-data-analytics" class="menu-inner">
+                    <div class="menu" id="menu-devops-cicd">
+                        <div id="menu-inner-devops-cicd" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Data Analytics <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>GitHub Actions <span>20%</span></h3>
+                                    <div class="bar" id="github_actions"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Leveraging Third-Party Analysis <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>GitLab CI/CD <span>50%</span></h3>
+                                    <div class="bar" id="gitlab_cicd"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Bash Script <span>60%</span></h3>
+                                    <div class="bar" id="bash_script"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Batch <span>60%</span></h3>
+                                    <div class="bar" id="batch"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>SonarQube <span>60%</span></h3>
+                                    <div class="bar" id="sonarqube"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>TDD (Test-Driven Development) <span>60%</span></h3>
+                                    <div class="bar" id="tdd"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Unittest <span>70%</span></h3>
+                                    <div class="bar" id="unittest"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Integration Test <span>50%</span></h3>
+                                    <div class="bar" id="integration_test"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -464,24 +525,44 @@
                 </div>
             </div>
 
-            <!-- Public Relations & Media -->
+            <!-- Project Management & Collaboration -->
             <div class="skills-column">
-                <div class="dropdown" id="dropdown-public-relations">
-                    <button onclick="handleDropdownClicked('public-relations')">
-                        Public Relations & Media
+                <div class="dropdown" id="dropdown-project-management">
+                    <button onclick="handleDropdownClicked('project-management')">
+                        Project Management & Collaboration
                         <span class="chevron material-symbols-outlined"> expand_more </span>
                     </button>
-                    <div class="menu" id="menu-public-relations">
-                        <div id="menu-inner-public-relations" class="menu-inner">
+                    <div class="menu" id="menu-project-management">
+                        <div id="menu-inner-project-management" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Media Relations <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Jira <span>80%</span></h3>
+                                    <div class="bar" id="jira"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Industry Analyst Relations <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>RACI Matrix <span>80%</span></h3>
+                                    <div class="bar" id="raci_matrix"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Gantt Charts <span>100%</span></h3>
+                                    <div class="bar" id="gantt_charts"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Agile <span>60%</span></h3>
+                                    <div class="bar" id="agile"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Scrum <span>90%</span></h3>
+                                    <div class="bar" id="scrum"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Kanban <span>80%</span></h3>
+                                    <div class="bar" id="kanban"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -490,29 +571,54 @@
                 </div>
             </div>
 
-            <!-- Customer Service & Content -->
+            <!-- Documentation & Diagram -->
             <div class="skills-column">
-                <div class="dropdown" id="dropdown-customer-service">
-                    <button onclick="handleDropdownClicked('customer-service')">
-                        Customer Service & Content
+                <div class="dropdown" id="dropdown-documentation-diagram">
+                    <button onclick="handleDropdownClicked('documentation-diagram')">
+                        Documentation & Diagram
                         <span class="chevron material-symbols-outlined"> expand_more </span>
                     </button>
-                    <div class="menu" id="menu-customer-service">
-                        <div id="menu-inner-customer-service" class="menu-inner">
+                    <div class="menu" id="menu-documentation-diagram">
+                        <div id="menu-inner-documentation-diagram" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Customer Service-Oriented <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Markdown <span>70%</span></h3>
+                                    <div class="bar" id="markdown"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Content Management System (CMS) <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>MkDocs <span>60%</span></h3>
+                                    <div class="bar" id="mkdocs"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Consumer behavior  <span>60%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Entity Relationship Diagram (ERD) <span>60%</span></h3>
+                                    <div class="bar" id="erd"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>BPMN Business Process Diagram (BPMN) <span>60%</span></h3>
+                                    <div class="bar" id="bpmn"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Use Case Diagram <span>90%</span></h3>
+                                    <div class="bar" id="use_case_diagram"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Class Diagram <span>90%</span></h3>
+                                    <div class="bar" id="class_diagram"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Sequence Diagram <span>80%</span></h3>
+                                    <div class="bar" id="sequence_diagram"><span></span></div>
+                                </div>
+
+                                <div class="progress">
+                                    <h3>Activity Diagram <span>70%</span></h3>
+                                    <div class="bar" id="activity_diagram"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -532,48 +638,43 @@
                         <div id="menu-inner-soft-skills" class="menu-inner">
                             <div class="main-menu">
                                 <div class="progress">
-                                    <h3>Problem-solving <span>85%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Communication <span>85%</span></h3>
+                                    <div class="bar" id="communication"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Creative thinking <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Problem Solving <span>80%</span></h3>
+                                    <div class="bar" id="problem_solving"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Communication <span>75%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Public Speaking <span>75%</span></h3>
+                                    <div class="bar" id="public_speaking"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Present <span>85%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Presentation <span>90%</span></h3>
+                                    <div class="bar" id="presentation"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Synthesize information <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Teamwork & Collaboration <span>80%</span></h3>
+                                    <div class="bar" id="teamwork"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Teamworking <span>75%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Adaptability <span>75%</span></h3>
+                                    <div class="bar" id="adaptability"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Budget Oversight <span>85%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Time Management <span>85%</span></h3>
+                                    <div class="bar" id="time_management"><span></span></div>
                                 </div>
 
                                 <div class="progress">
-                                    <h3>Sales Support <span>70%</span></h3>
-                                    <div class="bar"><span></span></div>
-                                </div>
-
-                                <div class="progress">
-                                    <h3>Product Launches <span>75%</span></h3>
-                                    <div class="bar"><span></span></div>
+                                    <h3>Decision-Making <span>78%</span></h3>
+                                    <div class="bar" id="decision_making"><span></span></div>
                                 </div>
                             </div>
                         </div>

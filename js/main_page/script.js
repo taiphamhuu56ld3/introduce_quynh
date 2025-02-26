@@ -107,33 +107,33 @@ class DropdownManager {
     }
 }
 
-const dropdownMarketingManager = new DropdownManager("dropdown-marketing", "menu-marketing");
-const dropdownIMCManager = new DropdownManager("dropdown-imc", "menu-imc");
-const dropdownAccountProjectManager = new DropdownManager("dropdown-account-project", "menu-account-project");
-const dropdownDataAnalyticsManager = new DropdownManager("dropdown-data-analytics", "menu-data-analytics");
-const dropdownPublicRelationsManager = new DropdownManager("dropdown-public-relations", "menu-public-relations");
-const dropdownCustomerServiceManager = new DropdownManager("dropdown-customer-service", "menu-customer-service");
+const dropdownProgrammingLanguagesManager = new DropdownManager("dropdown-programming-languages", "menu-programming-languages");
+const dropdownPrinciplesPatternsManager = new DropdownManager("dropdown-principles-patterns", "menu-principles-patterns");
+const dropdownToolsEnvironmentsManager = new DropdownManager("dropdown-tools-environments", "menu-tools-environments");
+const dropdownDevopsCICDManager = new DropdownManager("dropdown-devops-cicd", "menu-devops-cicd");
+const dropdownProjectManagementManager = new DropdownManager("dropdown-project-management", "menu-project-management");
+const dropdownDocumentationDiagramManager = new DropdownManager("dropdown-documentation-diagram", "menu-documentation-diagram");
 const dropdownCustomerSoftSkills = new DropdownManager("dropdown-soft-skills", "menu-soft-skills");
 
 const handleDropdownClicked = (type) => {
     switch (type) {
-        case 'marketing':
-            dropdownMarketingManager.handleDropdownClicked(event);
+        case 'programming_languages':
+            dropdownProgrammingLanguagesManager.handleDropdownClicked(event);
             break;
-        case 'imc':
-            dropdownIMCManager.handleDropdownClicked(event);
+        case 'principles-patterns':
+            dropdownPrinciplesPatternsManager.handleDropdownClicked(event);
             break;
-        case 'account-project':
-            dropdownAccountProjectManager.handleDropdownClicked(event);
+        case 'tools-environments':
+            dropdownToolsEnvironmentsManager.handleDropdownClicked(event);
             break;
-        case 'data-analytics':
-            dropdownDataAnalyticsManager.handleDropdownClicked(event);
+        case 'devops-cicd':
+            dropdownDevopsCICDManager.handleDropdownClicked(event);
             break;
-        case 'public-relations':
-            dropdownPublicRelationsManager.handleDropdownClicked(event);
+        case 'project-management':
+            dropdownProjectManagementManager.handleDropdownClicked(event);
             break;
-        case 'customer-service':
-            dropdownCustomerServiceManager.handleDropdownClicked(event);
+        case 'documentation-diagram':
+            dropdownDocumentationDiagramManager.handleDropdownClicked(event);
             break;
         case 'soft-skills':
             dropdownCustomerSoftSkills.handleDropdownClicked(event);
