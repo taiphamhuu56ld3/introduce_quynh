@@ -1,3 +1,15 @@
+// disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+document.onkeydown = (e) => {
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+
 // auto update span % value based on value entered from html
 document.addEventListener("DOMContentLoaded", function () {
     function updateProgressBars() {
