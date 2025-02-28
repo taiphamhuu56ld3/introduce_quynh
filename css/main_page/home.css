@@ -1,3 +1,8 @@
+* {
+    --width-text-animate-h3: 35rem;
+    --minus-width-text-animate-h3: -35rem;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -37,7 +42,7 @@
 
 .home-content .text-animate {
     position: relative;
-    width: 36rem;
+    width: var(--width-text-animate-h3);
 }
 
 .home-content .text-animate h3 {
@@ -47,12 +52,8 @@
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -33rem 0;
+    background-clip: text;
     white-space: nowrap;
-}
-
-.home.show-animate .home-content .text-animate h3 {
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 }
@@ -66,14 +67,9 @@
     height: 100%;
     border-right: 2px solid var(--main-color);
     z-index: -1;
-}
-
-.home.show-animate .home-content .text-animate h3::before {
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
-
-;
 
 .home-content h3::before {
     content: '';
@@ -242,34 +238,30 @@
 
 /* KEYFRAMES ANIMATION */
 @keyframes homeBgText {
-
-    0%,
-    10%,
-    100% {
-        background-position: -5% 0;
+    0%, 10% {
+        background-position: var(--minus-width-text-animate-h3) 0;
+    }
+    80% {
+        background-position: 0 0;
     }
 
     65%,
-    78%,
     85% {
-        width: 96%;
         background-position: 0 0;
     }
 }
 
 @keyframes homeCursorText {
-
-    0%,
-    10%,
-    100% {
-        background-position: -5% 0;
+    0%, 10% {
+        width: 0;
+    }
+    80% {
+        width: 100%;
     }
 
     65%,
-    78%,
     85% {
-        width: 96%;
-        background-position: 0 0;
+        width: 100%;
     }
 }
 
