@@ -1,10 +1,13 @@
-// Scroll to top effect
+// Scroll to top effect and header effect
+const header = document.querySelector("[data-header]");
 const backToBtn = document.querySelector("[data-back-top-btn]");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
+    header.classList.add("active");
     backToBtn.classList.add("active");
   } else {
+    header.classList.remove("active");
     backToBtn.classList.remove("active");
   }
 });
