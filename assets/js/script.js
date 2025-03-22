@@ -81,3 +81,16 @@ const slidePrev = function () {
 };
 
 sliderPrevBtn.addEventListener("click", slidePrev);
+
+// Slider adjustment on window resize
+
+window.addEventListener("resize", function () {
+  totalSliderVisibleItems = Number(
+    getComputedStyle(slider).getPropertyValue("--slider-items")
+  );
+
+  totalSlidableItems =
+    sliderContainer.childElementCount - totalSliderVisibleItems;
+
+  moveSliderItem();
+});

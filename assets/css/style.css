@@ -146,6 +146,18 @@ body {
   overflow-y: overlay;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-carolina-blue);
+  border-radius: var(--radius-pill);
+}
 
 /* REUSED STYLE */
 .container {
