@@ -487,21 +487,26 @@ body.nav-active {
 
 @keyframes heroDecoAnim {
   0% {
-    transform: translateY(40px) rotate(0);
+    transform: translateY(30px) rotate(0);
   }
   100% {
-    transform: translateY(0) rotate(0.4turn);
+    transform: translateY(0) rotate(0.6turn);
   }
 }
 
 .hero .shape-1 {
-  top: 50px;
-  right: 40px;
+  top: 10px;
+  right: 10px;
 }
 
 .hero .shape-2 {
-  bottom: 20px;
-  left: 24px;
+  top: 330px;
+  left: 35px;
+}
+
+.hero .shape-3 {
+  bottom: 200px;
+  right: 200px;
 }
 
 /* TOPICS */
